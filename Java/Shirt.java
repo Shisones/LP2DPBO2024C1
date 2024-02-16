@@ -1,11 +1,16 @@
-package Java;
+package Java; // Java package for compilation
 
+// Shirt class that extends the Clothing class
 public class Shirt extends Clothing {
-    protected String color;
-    protected char sleeve_type;
+    /* Attributes */ 
+    protected String color; // Color of shirt
+    protected String sleeve_type; // Sleeve type of shirt
+    
+    /* Constructors */
 
+    // Empty Constructor
     public Shirt() {
-        this.id_product = "n/a";
+        this.id = "n/a";
         this.name = "n/a";
         this.brand = "n/a";
         this.price = -1;
@@ -15,15 +20,15 @@ public class Shirt extends Clothing {
         this.gender = '-';
 
         this.color = "n/a";
-        this.sleeve_type = '-';
+        this.sleeve_type = "n/a";
     }
-    
+    // Non-Empty Constructor
     public Shirt(
-        String id_product, String name, String brand, int price,
+        String id, String name, String brand, int price,
         String size, String material, char gender,
-        String color, char sleeve_type
+        String color, String sleeve_type
     ) {
-        this.id_product = id_product;
+        this.id = id;
         this.name = name;
         this.brand = brand;
         this.price = price;
@@ -35,6 +40,14 @@ public class Shirt extends Clothing {
         this.color = color;
         this.sleeve_type = sleeve_type;
     }
-     
+    
+    /* Get Methods */ 
+    public String getColor() { return this.color; }
+    public String getSleeveType() { return this.sleeve_type; }
+
+    /* Set Methods */ 
+    public void setColor(String color) { this.color = color; }
+    public void setSleeveType(String sleeve_type) { this.sleeve_type = sleeve_type; }
+
     
 }
