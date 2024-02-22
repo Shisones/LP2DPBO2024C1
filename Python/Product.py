@@ -30,6 +30,6 @@ class Product:
     def setName(self, name):
         self.__name = name
     def setBrand(self, brand):
-        self.__id = id
+        self.__brand = brand
     def setPrice(self, price):
-        self.__id = id
+        self.__price = price

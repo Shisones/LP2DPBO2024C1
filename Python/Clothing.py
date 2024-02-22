@@ -1,3 +1,5 @@
+from Product import Product
+
 class Clothing(Product):
     # Attribute declarations
     __size = ""
@@ -26,4 +28,4 @@ class Clothing(Product):
     def setMaterial(self, material):
         self.__material = material
     def setGender(self, gender):
-        self.__size = size
+        self.__gender = gender

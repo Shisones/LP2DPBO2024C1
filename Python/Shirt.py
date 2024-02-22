@@ -1,3 +1,5 @@
+from Clothing import Clothing
+
 class Shirt(Clothing):
     # Attribute declarations
     __color = ""

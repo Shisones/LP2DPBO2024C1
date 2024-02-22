@@ -3,7 +3,7 @@
 
 using namespace std; // Standard namespace, glibc::std
 
-class Shirt : public Product {
+class Shirt : public Clothing {
     private:
         // Attributes
         string color; // Shirt color
@@ -28,9 +28,9 @@ class Shirt : public Product {
         
         // Get Methods
         string getColor() { return this->color; }
-        string getSleeve_type() { return this->sleeve_type; }
+        string getSleeveType() { return this->sleeve_type; }
         
         // Set Methods
         void setColor(string color) { this->color = color; }
-        void setSleeve_type(string sleeve_type) { this->sleeve_type = sleeve_type; }
+        void setSleeveType(string sleeve_type) { this->sleeve_type = sleeve_type; }
 };
