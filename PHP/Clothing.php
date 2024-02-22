@@ -1,4 +1,5 @@
 <?php
+require_once('Product.php');
 
 class Clothing extends Product {
     // Private attributes
@@ -20,7 +21,9 @@ class Clothing extends Product {
     public function getGender() { return $this->gender; }
 
     // Set methods
-    public function setSize($size) { $this->size = size };
-    public function setMaterial($material) { $this->material = material };
-    public function setGender($gender) { $this->gender = gender };
+    public function setSize($size) { $this->size = $size; }
+    public function setMaterial($material) { $this->material = $material; }
+    public function setGender($gender) { $this->gender = $gender; }
 }
+
+?>

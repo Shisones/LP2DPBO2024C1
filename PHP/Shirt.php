@@ -1,4 +1,5 @@
 <?php
+require_once('Clothing.php');
 
 class Shirt extends Clothing {
     // Private attributes
@@ -17,6 +18,8 @@ class Shirt extends Clothing {
     public function getSleeveType() { return $this->sleeve_type; }
 
     // Set methods
-    public function setColor($color) { $this->color = color };
-    public function setSleeveType($sleeve_type) { $this->sleeve_type = sleeve_type };
+    public function setColor($color) { $this->color = $color; }
+    public function setSleeveType($sleeve_type) { $this->sleeve_type = $sleeve_type; }
 }
+
+?>
