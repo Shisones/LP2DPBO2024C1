@@ -24,6 +24,7 @@ public class Shirt extends Clothing {
     }
     // Non-Empty Constructor
     public Shirt(
+    public function setGender($gender) { $this->gender = gender };
         String id, String name, String brand, int price,
         String size, String material, char gender,
         String color, String sleeve_type
